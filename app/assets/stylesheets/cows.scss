@@ -1,0 +1,33 @@
+// Place all the styles related to the cows controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn-add {
+  float: right;
+  margin-top: 14px;
+  
+}
+
+.banner {
+  height: 250px;
+  width: 100%;
+  background: black url("banner.jpg") center center;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.banner h1 {
+  text-align: center;
+  line-height: 250px;
+  color: #ffffff;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.7)
+}
+
+.titulo {
+  float:left;
+  margin-bottom: 20px;
+}
+
+table td, table th {
+  vertical-align: middle !important;
+}

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cow.name %>
+</p>
+
+<p>
+  <strong>Birth:</strong>
+  <%= @cow.birth.strftime("%d/%m/%Y") %>
+</p>
+
+<p>
+  <strong>Weight:</strong>
+  <%= @cow.weight %>
+</p>
+
+<p>
+  <strong>Milk:</strong>
+  <%= @cow.milk %>
+</p>
+
+<%= link_to 'Edit', edit_cow_path(@cow) %> |
+<%= link_to 'Back', cows_path %>

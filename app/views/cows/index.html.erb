@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1 style="margin: 0" class="titulo">Cows</h1>
+<%= link_to 'New Cow', new_cow_path, :class=>"btn btn-sm btn-success btn-add" %>
+<div class="clearfix"></div>
+<hr>
+
+<table class="table table-bordered .table-responsive">
+  <thead class="thead-dark">
+    <tr>
+      <th width="30%" class="">Name</th>
+      <th width="20%" class="text-center">Birth Date</th>
+      <th width="15%" class="text-center">Weight</th>
+      <th width="15%" class="text-center">Milk (per day)</th>
+      <th width="20%" class="text-center" colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cows.each do |cow| %>
+      <tr>
+        <td><%= cow.name %></td>
+        <td class="text-center"><%= cow.birth.strftime("%d/%m/%Y") %></td>
+        <td class="text-center"><%= cow.weight %></td>
+        <td class="text-center"><%= cow.milk %> <%= "liter".pluralize(cow.milk) %></td>
+        <td class="text-center">
+          <%= link_to 'Show', cow, :class=>"btn btn-sm btn-primary" %>
+          <%= link_to 'Edit', edit_cow_path(cow), :class=>"btn btn-sm btn-info" %>
+          <%= link_to 'Destroy', cow, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"btn btn-sm btn-danger" %>
+        </td>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
