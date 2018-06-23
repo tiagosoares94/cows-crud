@@ -1,4 +1,8 @@
-<p id="notice"><%= notice %></p>
+<% if notice %>
+  <div class="alert alert-danger">
+    <p><%= notice %></p>
+  </div>
+<% end %>
 
 <h1 style="margin: 0" class="titulo">Cows</h1>
 <%= link_to 'New Cow', new_cow_path, :class=>"btn btn-sm btn-success btn-add" %>
