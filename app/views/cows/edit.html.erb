@@ -3,5 +3,7 @@
 
 <%= render 'form', cow: @cow %>
 
-<%= link_to 'Show', @cow %> |
-<%= link_to 'Back', cows_path %>
+<div class="alinha">
+  <%= link_to 'Show', @cow, :class=>"btn btn-sm btn-dark" %> 
+  <%= link_to 'Back', cows_path, :class=>"btn btn-sm btn-dark" %>
+</div>

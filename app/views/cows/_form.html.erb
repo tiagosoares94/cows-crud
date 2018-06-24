@@ -10,33 +10,33 @@
       </ul>
     </div>
   <% end %>
+   <div class="form-wrapper"> 
+    <div class="row">
+      <div class="form-group col-12">
+        <%= form.label :name %>
+        <%= form.text_field :name, :class => "form-control" %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="form-group form-inline col-12">
+        <%= form.label :birth, :class => "espaco-birth" %> 
+        <%= form.date_select :birth, {:start_year => 1999, :end_year => Time.current.year}, :class => "form-control" %>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="form-group col-6">
+        <%= form.label :weight %>
+        <%= form.text_field :weight, :class => "form-control" %>
+      </div>
+      <div class="form-group col-6">
+        <%= form.label :milk %>
+        <%= form.text_field :milk, :class => "form-control" %>
+      </div>
+    </div>
 
-  <div class="row">
-    <div class="form-group col-12">
-      <%= form.label :name %>
-      <%= form.text_field :name, :class => "form-control" %>
+    <div class="form-group">
+      <%= form.submit class: 'btn btn-sm btn-primary' %>
     </div>
-  </div>
-  
-  <div class="row">
-    <div class="form-group form-inline col-12">
-      <%= form.label :birth %> 
-      <%= form.date_select :birth, {:start_year => 1999, :end_year => Time.current.year}, :class => "form-control" %>
-    </div>
-  </div>
-  
-  <div class="row">
-    <div class="form-group col-6">
-      <%= form.label :weight %>
-      <%= form.text_field :weight, :class => "form-control" %>
-    </div>
-    <div class="form-group col-6">
-      <%= form.label :milk %>
-      <%= form.text_field :milk, :class => "form-control" %>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <%= form.submit %>
-  </div>
 <% end %>

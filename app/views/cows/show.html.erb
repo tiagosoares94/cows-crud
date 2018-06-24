@@ -4,26 +4,29 @@
   <% end %>
 </div>
 
+<div class="container-form">
+  <div class="container-wrapper">
+    <p>
+      <strong>Name:</strong>
+      <%= @cow.name %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @cow.name %>
-</p>
+    <p>
+      <strong>Birth:</strong>
+      <%= @cow.birth.strftime("%d/%m/%Y") %>
+    </p>
 
-<p>
-  <strong>Birth:</strong>
-  <%= @cow.birth.strftime("%d/%m/%Y") %>
-</p>
+    <p>
+      <strong>Weight:</strong>
+      <%= @cow.weight %>
+    </p>
 
-<p>
-  <strong>Weight:</strong>
-  <%= @cow.weight %>
-</p>
+    <p>
+      <strong>Milk:</strong>
+      <%= @cow.milk %>
+    </p>
+  </div>
+</div>
 
-<p>
-  <strong>Milk:</strong>
-  <%= @cow.milk %>
-</p>
-
-<%= link_to 'Edit', edit_cow_path(@cow) %> |
-<%= link_to 'Back', cows_path %>
+<%= link_to 'Edit', edit_cow_path(@cow),:class=>"btn btn-sm btn-info" %> 
+<%= link_to 'Back', cows_path,:class=>"btn btn-sm btn-dark" %>
