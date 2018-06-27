@@ -1,24 +1,20 @@
-# README
+# Milk For Zombies
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Parte do trabalho proposto pela disciplina de Banco de Dados, mestrada pela Profª Me. Juliana Pasquini, na FATEC São José dos Campos.
 
-Things you may want to cover:
+___
 
-* Ruby version
+## Desafio
 
-* System dependencies
+1) Será atribuído um ponto extra na média para os grupos que conseguirem desenvolver pelo menos uma interface e realizar a conexão com o banco. (Realizar testes)
 
-* Configuration
+2) Mostrar e Executar a implementação e enfatizar como foi realizado a conexão com o banco de dados.
 
-* Database creation
+___
 
-* Database initialization
+## Desenvolvido com
 
-* How to run the test suite
+* Rails
+* Bootstrap
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+___
